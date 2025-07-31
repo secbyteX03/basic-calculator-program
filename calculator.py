@@ -20,8 +20,11 @@ elif operation == "*":
     print(f"{num1} * {num2} = {result}")
 
 elif operation == "/":
-     if num2 != 0:
+    if num2 != 0:
         result = num1 / num2
-    print(f"{num1} / {num2} = {result}")
-   else:
+        print(f"{num1} / {num2} = {result}")
+    else:
         print("Error: Cannot divide by zero!")
+#Handle invalid operations
+else:
+    print("Error: Invalid operation! Please use +, -, *, or /")
